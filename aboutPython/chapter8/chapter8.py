@@ -1,3 +1,19 @@
+
+def fix_machine(debris, product):
+    ### WRITE YOUR CODE HERE ###
+    findAll = True
+    for c in product:
+        if debris.find(c) == -1:
+            findAll = False
+            break
+    if findAll:
+        return product
+    else:
+        return "Give me something that's not useless next time."
+
+
+
+
 daysOfMonthsNormal = [ 0,31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 daysOfMonthsLeapyear = [ 0,31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
