@@ -48,6 +48,7 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
             if year == year2 and m ==month2:
                 break
         year += 1
+        month =1
     return retDays
 # Test routine
 
