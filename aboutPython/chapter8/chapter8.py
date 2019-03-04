@@ -17,30 +17,37 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
     ##
     year,month,day = year1,month1,day1
     retDays = 0
-    while year <=year2 and month<=month2:
-        for m in range(year,13):
+    while year <=year2 :
+        for m in range(month,13):
             if isLeapYear(year):
-                for i in enumerate(daysOfMonthsLeapyear):
-                    if i != year:
+                for i,days in enumerate(daysOfMonthsLeapyear):
+                    if i != m:
                         continue
-                    if(year == year1 and month == month1):
-                        retDays = retDays + daysOfMonthsLeapyear[i] - day
-                    elif (year == year2 and month == month2):
-                        retDays += days2
+                    if(year == year1 and m == month1):
+                        retDays = retDays +days - day
+                        break
+                    elif (year == year2 and m == month2):
+                        retDays += day2
+                        break
                     else:
-                        retDays = retDays + daysOfMonthsLeapyear[i]
+                        retDays = retDays +days
+                        break
             else:
-                for i in enumerate(daysOfMonthsNormal):
-                    if i != year:
+                for i ,days in enumerate(daysOfMonthsNormal):
+                    if i != m:
                         continue
-                    if(year == year1 and month == month1):
-                        retDays = retDays + daysOfMonthsNormal[i] - day
-                    elif (year == year2 and month == month2):
-                        retDays += days2
+                    if(year == year1 and m == month1):
+                        retDays = retDays + days - day
+                        break
+                    elif (year == year2 and m == month2):
+                        retDays += day2
+                        break
                     else:
-                        retDays = retDays + daysOfMonthsNormal[i]
-        year+=1
-        month+=1
+                        retDays = retDays + days
+                        break
+            if year == year2 and m ==month2:
+                break
+        year += 1
     return retDays
 # Test routine
 
