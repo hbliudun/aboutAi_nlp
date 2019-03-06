@@ -7,6 +7,10 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "firstChapter", "firstChapte
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "chapter8", "chapter8\chapter8.pyproj", "{2F03445E-54C4-46DC-9E42-46159DEF73EB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "leetcode", "leetcode", "{D7FB4BE5-208F-4398-B148-BCCACF601B60}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ex2", "ex2\ex2.pyproj", "{4BC1B280-AF29-4E02-B859-8F06BC34FC8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,9 +21,14 @@ Global
 		{6321341B-7E0C-48C5-AE3C-FBA21019874F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F03445E-54C4-46DC-9E42-46159DEF73EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2F03445E-54C4-46DC-9E42-46159DEF73EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC1B280-AF29-4E02-B859-8F06BC34FC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC1B280-AF29-4E02-B859-8F06BC34FC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BC1B280-AF29-4E02-B859-8F06BC34FC8A} = {D7FB4BE5-208F-4398-B148-BCCACF601B60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A29A9B08-BB45-4FE9-B40B-579545D9AD8E}
