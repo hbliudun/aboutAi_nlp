@@ -37,3 +37,8 @@ class Solution:
             l2 = l2.next
             
         return nodeRet
+
+Solution s
+ListNode l1(1)
+ListNode l2(2)
+s.addTwoNumbers(None,None)
